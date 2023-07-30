@@ -5,9 +5,10 @@
  *
  * @param const int[] haystack - the array to search
  * @param const int needle - the value to search for
+ * @param const size_t - the size of the array to search
  * @return int - the location of the found value
  */
-int binsearch(const int *haystack, const int needle, const int h_size)
+int binsearch(const int *haystack, const int needle, const size_t h_size)
 {
 	int count = 0;
 	int low = 0;
