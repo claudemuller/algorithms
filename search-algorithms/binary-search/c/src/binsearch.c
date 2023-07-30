@@ -10,7 +10,7 @@
 int binsearch(const int *haystack, const int needle, const int h_size) {
 	int count = 0;
 	int low = 0;
-	int high = sizeof(int)*h_size - 1;
+	int high = h_size - 1;
 
 	// While the range to search hasn't shrunk to zero.
 	while (low <= high) {
