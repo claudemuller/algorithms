@@ -5,6 +5,7 @@
  *
  * @param const int[] haystack - the array to search
  * @param const int needle - the value to search for
+ * @param const size_t - the size of the array to search
  * @return int - the location of the found value
  */
 result_t linsearch(const int *haystack, const int needle, const size_t h_size)

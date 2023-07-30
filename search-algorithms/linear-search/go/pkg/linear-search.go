@@ -1,6 +1,6 @@
 package pkg
 
-// LinearSearcLinearn iterative implementation of the Linear Search algorithm.
+// LinearSearch iterative implementation of the Linear Search algorithm.
 func LinearSearch(haystack []int, needle int) (int, int) {
 	var c int
 
