@@ -3,7 +3,7 @@
 ## Requirements
 
 - [gcc](https://gcc.gnu.org/)
-- Or [clang](https://clang.llvm.org/)
+- or [clang](https://clang.llvm.org/)
 - [make](https://www.gnu.org/software/make/)
 
 ## Run Tests
