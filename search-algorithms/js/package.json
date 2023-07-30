@@ -1,0 +1,17 @@
+{
+  "name": "js-search-algorithms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/claudemuller/design-patterns-and-algos",
+  "author": "Claude Müller",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1",
+    "jest": "^29.3.1"
+  }
+}
