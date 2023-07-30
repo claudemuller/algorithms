@@ -1,5 +1,5 @@
 /**
- * Binary search implementation.
+ * Binary search implementation using iteration.
  *
  * @param {int[]} haystack - the array to search
  * @param {int} needle - the value to search for

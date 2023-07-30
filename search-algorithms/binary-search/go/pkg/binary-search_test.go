@@ -69,9 +69,11 @@ func genHaystack(lowerN, upperN int) ([]int, error) {
 	if lowerN >= upperN {
 		return nil, errors.New("invalid range")
 	}
+
 	haystack := make([]int, upperN-lowerN+1)
 	for i := 0; i <= upperN-lowerN; i++ {
 		haystack[i] = i + lowerN
 	}
+
 	return haystack, nil
 }

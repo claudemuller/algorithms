@@ -86,9 +86,11 @@ function genHaystack(lowerN, upperN) {
 	if (lowerN >= upperN) {
 		throw new Error('invalid range');
 	}
+
 	let haystack = []
 	for (let i = 0; i <= upperN - lowerN; i++) {
 		haystack.push(i + lowerN)
 	}
+
 	return haystack
 }

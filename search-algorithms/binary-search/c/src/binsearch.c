@@ -1,13 +1,14 @@
 #include "binsearch.h"
 
 /**
- * Binary search implementation.
+ * Binary search implementation using iteration.
  *
  * @param const int[] haystack - the array to search
  * @param const int needle - the value to search for
  * @return int - the location of the found value
  */
-int binsearch(const int *haystack, const int needle, const int h_size) {
+int binsearch(const int *haystack, const int needle, const int h_size)
+{
 	int count = 0;
 	int low = 0;
 	int high = h_size - 1;
