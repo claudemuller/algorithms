@@ -12,22 +12,21 @@ func BinarySearch(haystack []int, needle int) (int, int) {
 
 		// The mid-point in our range to search.
 		mid := (low + high) / 2
-		// The value at the midway point in our range.
-		found := haystack[mid]
 
-		// We found it!
-		if found == needle {
-			return mid, count
+		// The guess is too low, increase the low index.
+		if haystack[mid] < needle {
+			low = mid + 1
+			continue
 		}
 
-		if found > needle {
+		if haystack[mid] > needle {
 			// The guess is too high, reduce the high index.
 			high = mid - 1
 			continue
 		}
 
-		// The guess is too low, increase the low index.
-		low = mid + 1
+		// We found it!
+		return mid, count
 	}
 
 	return -1, count
