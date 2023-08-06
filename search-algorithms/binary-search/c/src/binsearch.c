@@ -20,22 +20,21 @@ int binsearch(const int *haystack, const int needle, const size_t h_size)
 
 		// The mid-point in our range to search.
 		int mid = (low + high) / 2;
-		// The value at the midway point in our range.
-		int found = haystack[mid];
 
-		// We found it!
-		if (found == needle) {
-			return mid;
+		// The guess is too low, increase the low index.
+		if (haystack[mid] < needle) {
+			low = mid + 1;
+			continue;
 		}
 
-		if (found > needle) {
-			// The guess is too high, reduce the high index.
+		// The guess is too high, reduce the high index.
+		if (haystack[mid] > needle) {
 			high = mid - 1;
 			continue;
 		}
 
-		// The guess is too low, increase the low index.
-		low = mid + 1;
+		// We found it!
+		return mid;
 	}
 
 	return -1;
