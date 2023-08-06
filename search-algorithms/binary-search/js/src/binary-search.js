@@ -16,22 +16,21 @@ export function binarySearch(haystack, needle) {
 
 		// The mid-point in our range to search.
 		const mid = Math.floor((low + high) / 2);
-		// The value at the midway point in our range.
-		const found = haystack[mid];
 
-		// We found it!
-		if (found === needle) {
-			return {foundIdx: mid, runs: count};
+		// The guess is too low, increase the low index.
+		if (haystack[mid] < needle) {
+			low = mid + 1;
+			continue;
 		}
 
-		if (found > needle) {
-			// The guess is too high, reduce the high index.
+		// The guess is too high, reduce the high index.
+		if (haystack[mid] > needle) {
 			high = mid - 1;
 			continue;
 		}
 
-		// The guess is too low, increase the low index.
-		low = mid + 1;
+		// We found it!
+		return {foundIdx: mid, runs: count};
 	}
 
 	return {foundIdx: -1, runs: count};
