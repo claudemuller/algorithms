@@ -1,16 +1,26 @@
-CFLAGS = -Wall -Wextra -Werror -pedantic -Wmissing-declarations
-CC = cc
+CC = gcc
+DBG_BIN = lldb
+CFLAGS = #-D_GNU_SOURCE
+CFLAGS += -std=c99
+CFLAGS += -Wall
+CFLAGS += -Wextra
+CFLAGS += -pedantic
+CFLAGS += -Werror
+CFLAGS += -Wextra
+CFLAGS += -Wmissing-declarations
 
-SRC = ./src
-TESTS=./tests
-
-all: test
+SRC_FILES = ./src/*.c
+TEST_DIR = ./tests
+TEST_SRC = $(filter-out ./src/main.c, $(wildcard ./src/*.c)) $(TEST_DIR)/*.c
 
 test:
-	$(CC) $(CFLAGS) -o $(TESTS)/tests $(SRC)/linsearch.c $(TESTS)/test_*.c && $(TESTS)/tests
+	$(CC) $(CFLAGS) $(LDFLAGS) $(LIBS) -o $(TEST_DIR)/tests $(TEST_SRC) && $(TEST_DIR)/tests
 
 test-debug:
-	$(CC) $(CFLAGS) -g -o $(TESTS)/tests $(SRC)/linsearch.c $(TESTS)/test_*.c && $(TESTS)/tests
+	$(CC) $(CFLAGS) $(LDFLAGS) $(LIBS) -g -o $(TEST_DIR)/tests $(TEST_SRC) && lldb $(TEST_DIR)/tests $(ARGS)
 
 clean:
-	rm -rf $(TESTS)/tests
+	rm -rf $(TEST_DIR)/tests*
+
+gen-compilation-db:
+	bear -- make build
