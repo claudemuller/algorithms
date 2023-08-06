@@ -19,8 +19,8 @@ func BinarySearch(haystack []int, needle int) (int, int) {
 			continue
 		}
 
+		// The guess is too high, reduce the high index.
 		if haystack[mid] > needle {
-			// The guess is too high, reduce the high index.
 			high = mid - 1
 			continue
 		}
