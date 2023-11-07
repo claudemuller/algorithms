@@ -7,6 +7,7 @@ A repo containing various algorithms expressed in various languages.
 
 - [in Go](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/linear-search/go)
 - [in C](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/linear-search/c)
+- [in Rust](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/linear-search/rust)
 - [in JavaScript](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/linear-search/js)
 
 ### [Binary Search](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search)
