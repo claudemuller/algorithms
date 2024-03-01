@@ -1,4 +1,4 @@
-# Graph algorithms in JavaScript
+# Graph traversal algorithms in JavaScript
 
 ## Requirements
 
