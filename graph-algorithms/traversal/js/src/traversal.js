@@ -29,7 +29,7 @@ export function depthFirstTraversal(graph, source) {
  * @return {string[]} - the resulting path of traversal
  */
 export function depthFirstTraversalRec(graph, source) {
-	let resPath = [source];
+	let resPath = [source]
 
 	for (let neighbour of graph[source]) {
 		resPath.push(...depthFirstTraversalRec(graph, neighbour))
