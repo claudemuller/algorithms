@@ -52,11 +52,11 @@ export function breadthFirstTraversal(graph, source) {
 	const resPath = []
 
 	while (queue.length > 0) {
-		const curr = queue.pop()
+		const curr = queue.shift()
 		resPath.push(curr)
 
 		for (let neighbour of graph[curr]) {
-			queue.unshift(neighbour)
+			queue.push(neighbour)
 		}
 	}
 
