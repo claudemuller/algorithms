@@ -3,22 +3,24 @@
  *
  * @param {{string, string[]}} graph - the graph to traverse
  * @param {string} source - the node at which to start traversing
- * @return {string[]} - the resulting path of traversal
+ * @return {string[]} - the resulting nodes that were traversed
  */
 export function depthFirstTraversal(graph, source) {
 	const stack = [source]
-	const resPath = []
+	const res = new Set()
 
 	while (stack.length > 0) {
 		const curr = stack.pop()
-		resPath.push(curr)
+		res.add(curr)
 
 		for (let neighbour of graph[curr]) {
-			stack.push(neighbour)
+			if (!res.has(neighbour)) {
+				stack.push(neighbour)
+			}
 		}
 	}
 
-	return resPath
+	return Array.from(res)
 }
 
 /**
@@ -26,16 +28,16 @@ export function depthFirstTraversal(graph, source) {
  *
  * @param {{string, string[]}} graph - the graph to traverse
  * @param {string} source - the node at which to start traversing
- * @return {string[]} - the resulting path of traversal
+ * @return {string[]} - the resulting nodes that were traversed
  */
 export function depthFirstTraversalRec(graph, source) {
-	let resPath = [source]
+	const res = [source]
 
 	for (let neighbour of graph[source]) {
-		resPath.push(...depthFirstTraversalRec(graph, neighbour))
+		res.push(...depthFirstTraversalRec(graph, neighbour))
 	}
 
-	return resPath
+	return res
 }
 
 /**
@@ -43,20 +45,22 @@ export function depthFirstTraversalRec(graph, source) {
  *
  * @param {{string, string[]}} graph - the graph to traverse
  * @param {string} source - the node at which to start traversing
- * @return {string[]} - the resulting path of traversal
+ * @return {string[]} - the resulting nodes that were traversed
  */
 export function breadthFirstTraversal(graph, source) {
 	const queue = [source]
-	const resPath = []
+	const res = new Set()
 
 	while (queue.length > 0) {
 		const curr = queue.shift()
-		resPath.push(curr)
+		res.add(curr)
 
 		for (let neighbour of graph[curr]) {
-			queue.push(neighbour)
+			if (!res.has(neighbour)) {
+				queue.push(neighbour)
+			}
 		}
 	}
 
-	return resPath
+	return Array.from(res)
 }
