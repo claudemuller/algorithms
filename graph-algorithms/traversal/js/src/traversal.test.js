@@ -5,8 +5,7 @@ import {
 } from './traversal';
 
 describe('depthFirstTraversal', () => {
-	it('should traverse the graph depth first', () => {
-		// Arrange.
+	describe('given a graph', () => {
 		/*
 		 * a------→c
 		 * |       |
@@ -16,27 +15,30 @@ describe('depthFirstTraversal', () => {
 		 * ↓
 		 * d------→f
 		 */
-		const graph = {
-			a: ['c', 'b'],
-			b: ['d'],
-			c: ['e'],
-			d: ['f'],
-			e: [],
-			f: [],
-		}
-		const expected = 'abdfce'
 
-		// Act.
-		const actual = depthFirstTraversal(graph, 'a');
+		it('should traverse the graph depth first', () => {
+			// Arrange.
+			const graph = {
+				a: ['c', 'b'],
+				b: ['d'],
+				c: ['e'],
+				d: ['f'],
+				e: [],
+				f: [],
+			}
+			const expected = 'abdfce'
 
-		// Assert.
-		expect(actual.join('')).toEqual(expected);
+			// Act.
+			const actual = depthFirstTraversal(graph, 'a');
+
+			// Assert.
+			expect(actual.join('')).toEqual(expected);
+		});
 	});
 })
 
 describe('depthFirstTraversalRec', () => {
-	it('should traverse the graph depth first recursively', () => {
-		// Arrange.
+	describe('given a graph', () => {
 		/*
 		 * a------→c
 		 * |       |
@@ -46,27 +48,30 @@ describe('depthFirstTraversalRec', () => {
 		 * ↓
 		 * d------→f
 		 */
-		const graph = {
-			a: ['b', 'c'],
-			b: ['d'],
-			c: ['e'],
-			d: ['f'],
-			e: [],
-			f: [],
-		}
-		const expected = 'abdfce'
 
-		// Act.
-		const actual = depthFirstTraversalRec(graph, 'a');
+		it('should traverse the graph depth first recursively', () => {
+			// Arrange.
+			const graph = {
+				a: ['b', 'c'],
+				b: ['d'],
+				c: ['e'],
+				d: ['f'],
+				e: [],
+				f: [],
+			}
+			const expected = 'abdfce'
 
-		// Assert.
-		expect(actual.join('')).toEqual(expected);
+			// Act.
+			const actual = depthFirstTraversalRec(graph, 'a');
+
+			// Assert.
+			expect(actual.join('')).toEqual(expected);
+		});
 	});
 })
 
 describe('breadthFirstTraversal', () => {
-	it('should traverse the graph breadth first', () => {
-		// Arrange.
+	describe('given a graph', () => {
 		/*
 		 * a------→c
 		 * |       |
@@ -76,20 +81,24 @@ describe('breadthFirstTraversal', () => {
 		 * ↓
 		 * d------→f
 		 */
-		const graph = {
-			a: ['b', 'c'],
-			b: ['d'],
-			c: ['e'],
-			d: ['f'],
-			e: [],
-			f: [],
-		}
-		const expected = 'abcdef'
 
-		// Act.
-		const actual = breadthFirstTraversal(graph, 'a');
+		it('should traverse the graph breadth first', () => {
+			// Arrange.
+			const graph = {
+				a: ['b', 'c'],
+				b: ['d'],
+				c: ['e'],
+				d: ['f'],
+				e: [],
+				f: [],
+			}
+			const expected = 'abcdef'
 
-		// Assert.
-		expect(actual.join('')).toEqual(expected);
+			// Act.
+			const actual = breadthFirstTraversal(graph, 'a');
+
+			// Assert.
+			expect(actual.join('')).toEqual(expected);
+		});
 	});
 })
