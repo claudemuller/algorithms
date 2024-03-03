@@ -17,6 +17,7 @@ export function depthFirstTraversal(graph, source) {
     for (let neighbour of graph[curr]) {
       // Guard against visited nodes
       if (!(neighbour in visited)) {
+        visited.push(neighbour);
         stack.push(neighbour);
       }
     }
@@ -71,6 +72,7 @@ export function breadthFirstTraversal(graph, source) {
     for (let neighbour of graph[curr]) {
       // Guard against visited nodes
       if (!(neighbour in visited)) {
+        visited.push(neighbour);
         queue.push(neighbour);
       }
     }
