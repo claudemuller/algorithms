@@ -8,7 +8,6 @@
 export function depthFirstTraversal(graph, source) {
   const stack = [source];
   const res = new Set();
-  const visited = [];
 
   while (stack.length > 0) {
     const curr = stack.pop();
@@ -16,8 +15,7 @@ export function depthFirstTraversal(graph, source) {
 
     for (let neighbour of graph[curr]) {
       // Guard against visited nodes
-      if (!(neighbour in visited)) {
-        visited.push(neighbour);
+      if (!res.has(neighbour)) {
         stack.push(neighbour);
       }
     }
@@ -63,7 +61,6 @@ export function depthFirstTraversalRec(graph, source) {
 export function breadthFirstTraversal(graph, source) {
   const queue = [source];
   const res = new Set();
-  const visited = [];
 
   while (queue.length > 0) {
     const curr = queue.shift();
@@ -71,8 +68,7 @@ export function breadthFirstTraversal(graph, source) {
 
     for (let neighbour of graph[curr]) {
       // Guard against visited nodes
-      if (!(neighbour in visited)) {
-        visited.push(neighbour);
+      if (!res.has(neighbour)) {
         queue.push(neighbour);
       }
     }
