@@ -31,13 +31,22 @@ export function depthFirstTraversal(graph, source) {
  * @return {string[]} - the resulting nodes that were traversed
  */
 export function depthFirstTraversalRec(graph, source) {
-  const res = [source];
+  const visited = [];
 
-  for (let neighbour of graph[source]) {
-    res.push(...depthFirstTraversalRec(graph, neighbour));
-  }
+  const fn = (g, s) => {
+    const res = [s];
 
-  return res;
+    for (let neighbour of g[s]) {
+      if (!(neighbour in visited)) {
+        visited.push(neighbour);
+        res.push(...fn(g, neighbour));
+      }
+    }
+
+    return res;
+  };
+
+  return fn(graph, source);
 }
 
 /**
