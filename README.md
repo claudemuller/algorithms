@@ -1,4 +1,4 @@
-# Software Algorithms
+# Software Algorithms ⚙️
 
 A repo containing various algorithms expressed in various languages.
 
