@@ -10,20 +10,20 @@
  */
 result_t linsearch(const int *haystack, const int needle, const size_t h_size)
 {
-	int c = 0;
+    int c = 0;
 
-	for (size_t i = 0; i < h_size+1; i++) {
-		c++;
-		if (haystack[i] == needle) {
-			return (result_t){
-				.found_idx = i,
-				.runs = c,
-			};
-		}
-	}
+    for (size_t i = 0; i < h_size + 1; i++) {
+        c++;
+        if (haystack[i] == needle) {
+            return (result_t) {
+                .found_idx = i,
+                .runs = c,
+            };
+        }
+    }
 
-	return (result_t){
-		.found_idx = -1,
-		.runs = c,
-	};
+    return (result_t) {
+        .found_idx = -1,
+        .runs = c,
+    };
 }
