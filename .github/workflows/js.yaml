@@ -19,10 +19,10 @@ jobs:
       - name: Test linear search
         working-directory: search-algorithms/linear-search/js
         run: |
-          yarn install
+          yarn
           yarn test
       - name: Test binary search
         working-directory: search-algorithms/binary-search/js
         run: |
-          yarn install
+          yarn
           yarn test
