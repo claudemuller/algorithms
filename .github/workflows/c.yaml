@@ -13,7 +13,6 @@ jobs:
         run: |
           sudo apt update
           sudo apt -y install build-essential
-      - name: Test
-        run: |
-          cd search-algorithms/linear-search/c
-          make test
+      - name: Test linear search
+        working-directory: search-algorithms/linear-search/c
+        run: make test

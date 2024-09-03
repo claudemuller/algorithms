@@ -14,6 +14,5 @@ jobs:
         with:
           go-version: 1.22
       - name: Test linear search
-        run: |
-          cd search-algorithms/linear-search/go
-          go test -v ./...
+        working-directory: search-algorithms/linear-search/go
+        run: go test -v ./...

@@ -16,9 +16,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: |
-          cd search-algorithms/linear-search/js
+      - name: Test linear search
+        working-directory: search-algorithms/linear-search/js
+        run: |
           yarn install
-      - run: |
-          cd search-algorithms/linear-search/js
           yarn test
