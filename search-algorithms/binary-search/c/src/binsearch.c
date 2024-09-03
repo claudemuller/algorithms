@@ -6,17 +6,17 @@
  * @param const int[] haystack - the array to search
  * @param const int needle - the value to search for
  * @param const size_t - the size of the array to search
- * @return int - the location of the found value
+ * @return result_t - the location of the found value and number of iterations
  */
-int binsearch(const int *haystack, const int needle, const size_t h_size)
+result_t binsearch(const int *haystack, const int needle, const size_t h_size)
 {
-	int count = 0;
+	int c = 0;
 	int low = 0;
 	int high = h_size - 1;
 
 	// While the range to search hasn't shrunk to zero.
 	while (low <= high) {
-		count++;
+		c++;
 
 		// The mid-point in our range to search.
 		int mid = (low + high) / 2;
@@ -34,8 +34,14 @@ int binsearch(const int *haystack, const int needle, const size_t h_size)
 		}
 
 		// We found it!
-		return mid;
+		return (result_t) {
+			.found_idx = mid,
+			.runs = c,
+		};
 	}
 
-	return -1;
+	return (result_t) {
+		.found_idx = -1,
+		.runs = c,
+	};
 }
