@@ -1,5 +1,10 @@
 # Software Algorithms ⚙️
 
+[![C](https://github.com/claudemuller/algorithms/actions/workflows/c.yaml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/c.yaml)
+[![Go](https://github.com/claudemuller/algorithms/actions/workflows/go.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/go.yml)
+[![JS](https://github.com/claudemuller/algorithms/actions/workflows/js.yaml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/js.yaml)
+[![Rust](https://github.com/claudemuller/algorithms/actions/workflows/rust.yaml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/rust.yaml)
+
 A repo containing various algorithms expressed in various languages.
 
 ## [Search Algorithms](https://github.com/claudemuller/algorithms/tree/master/search-algorithms)
