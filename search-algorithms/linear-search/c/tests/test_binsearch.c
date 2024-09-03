@@ -13,28 +13,6 @@ int test_linsearch(void);
         }                                                                  \
     } while (0)
 
-int main(void)
-{
-    int failed_tests = 0;
-
-    printf("Running tests for 'linsearch' function...\n");
-    if (test_linsearch() != 0) {
-        printf("❌ Some tests for 'linsearch' function failed.\n");
-        failed_tests++;
-    } else {
-        printf("✅ All tests for 'linsearch' function passed.\n");
-    }
-
-    if (failed_tests > 0) {
-        printf("💀 Total failed tests: %d\n", failed_tests);
-        return 1;
-    }
-
-    printf("✅ All tests passed successfully\n");
-
-    return 0;
-}
-
 int test_linsearch(void)
 {
     int *h = gen_haystack(1, 128);
@@ -60,6 +38,28 @@ int test_linsearch(void)
     ASSERT(actual.found_idx == (size_t)-1);
     ASSERT(actual.runs == 128);
     free(h);
+
+    return 0;
+}
+
+int main(void)
+{
+    int failed_tests = 0;
+
+    printf("Running tests for 'linsearch' function...\n");
+    if (test_linsearch() != 0) {
+        printf("❌ Some tests for 'linsearch' function failed.\n");
+        failed_tests++;
+    } else {
+        printf("✅ All tests for 'linsearch' function passed.\n");
+    }
+
+    if (failed_tests > 0) {
+        printf("💀 Total failed tests: %d\n", failed_tests);
+        return 1;
+    }
+
+    printf("✅ All tests passed successfully\n");
 
     return 0;
 }
