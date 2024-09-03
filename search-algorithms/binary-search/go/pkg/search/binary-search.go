@@ -1,7 +1,7 @@
-package pkg
+package search
 
-// BinarySearch is an iterative implementation of the Binary Search algorithm.
-func BinarySearch(haystack []int, needle int) (int, int) {
+// Binary is an iterative implementation of the Binary Search algorithm.
+func Binary(haystack []int, needle int) (int, int) {
 	var count int
 	var low int
 	high := len(haystack) - 1
