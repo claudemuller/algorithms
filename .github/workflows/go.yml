@@ -3,7 +3,7 @@ on:
   push:
     paths:
       - 'search-algorithms/linear-search/go/**'
-      # - 'examples/go/ex2/**'
+      - 'search-algorithms/binary-search/go/**'
 jobs:
   build:
     if: contains(github.event.head_commit.message, 'go/')
