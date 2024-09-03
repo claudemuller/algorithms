@@ -21,6 +21,7 @@ A repo containing various algorithms expressed in various languages.
 - [in Go](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search/go)
 - [in C](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search/c)
 - [in JavaScript](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search/js)
+- [in Rust](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search/rust)
 
 ## [Graph Algorithms](https://github.com/claudemuller/algorithms/tree/master/graph-algorithms)
 
