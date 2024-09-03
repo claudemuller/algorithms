@@ -2,13 +2,13 @@ package search
 
 // Binary is an iterative implementation of the Binary Search algorithm.
 func Binary(haystack []int, needle int) (int, int) {
-	var count int
+	var c int
 	var low int
 	high := len(haystack) - 1
 
 	// While the range to search hasn't shrunk to zero.
 	for low <= high {
-		count++
+		c++
 
 		// The mid-point in our range to search.
 		mid := (low + high) / 2
@@ -26,8 +26,8 @@ func Binary(haystack []int, needle int) (int, int) {
 		}
 
 		// We found it!
-		return mid, count
+		return mid, c
 	}
 
-	return -1, count
+	return -1, c
 }
