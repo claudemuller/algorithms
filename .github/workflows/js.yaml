@@ -21,3 +21,8 @@ jobs:
         run: |
           yarn install
           yarn test
+      - name: Test binary search
+        working-directory: search-algorithms/binary-search/js
+        run: |
+          yarn install
+          yarn test

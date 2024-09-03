@@ -15,3 +15,6 @@ jobs:
       - name: Test linear search
         working-directory: search-algorithms/linear-search/rust
         run: cargo test
+      - name: Test binary search
+        working-directory: search-algorithms/binary-search/rust
+        run: cargo test

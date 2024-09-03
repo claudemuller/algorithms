@@ -16,3 +16,6 @@ jobs:
       - name: Test linear search
         working-directory: search-algorithms/linear-search/c
         run: make test
+      - name: Test binary search
+        working-directory: search-algorithms/binary-search/c
+        run: make test
