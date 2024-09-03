@@ -12,8 +12,6 @@ jobs:
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
-      - uses: actions-rs/cargo@v1
-        with:
-          command: test
-          working-directory: search-algorithms/linear-search/rust
-          # args: --release --all-features
+      - name: Test linear search
+        working-directory: search-algorithms/linear-search/rust
+        run: cargo test
