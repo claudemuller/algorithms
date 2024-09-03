@@ -1,0 +1,18 @@
+name: Go
+on:
+  push:
+    paths:
+      - 'search-algorithms/linear-search/go/**'
+      # - 'examples/go/ex2/**'
+jobs:
+  build:
+    if: contains(github.event.head_commit.message, 'go/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: 1.22
+      - name: Test
+        run: go test -v ./...

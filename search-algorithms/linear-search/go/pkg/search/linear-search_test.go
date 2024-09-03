@@ -1,25 +1,21 @@
-package pkg_test
+package search_test
 
 import (
 	"errors"
-	"fmt"
 	"testing"
 
-	"github.com/claudemuller/algorithms/search-algorithms/go/pkg"
-	"github.com/stretchr/testify/assert"
+	"github.com/claudemuller/algorithms/search-algorithms/go/pkg/search"
 )
 
 func TestLinearSearch(t *testing.T) {
-	type test struct {
+	tests := []struct {
 		name     string
 		find     int
 		lowerN   int
 		upperN   int
 		foundIdx int
 		runs     int
-	}
-
-	tests := []test{
+	}{
 		{
 			name:     "Find needle in 8 runs",
 			find:     8,
@@ -59,9 +55,15 @@ func TestLinearSearch(t *testing.T) {
 		if err != nil {
 			t.Fatal(err)
 		}
-		got, runs := pkg.LinearSearch(haystack, tc.find)
-		assert.Equal(t, tc.foundIdx, got, fmt.Sprintf("%s: %s", tc.name, "foundIdx failed assertion"))
-		assert.Equal(t, tc.runs, runs, fmt.Sprintf("%s: %s", tc.name, "runs failed assertion"))
+
+		got, runs := search.Linear(haystack, tc.find)
+
+		if tc.foundIdx != got {
+			t.Errorf("want = %d, got = %d", tc.foundIdx, got)
+		}
+		if tc.runs != runs {
+			t.Errorf("want = %d, got = %d", tc.runs, runs)
+		}
 	}
 }
 
