@@ -1,12 +1,11 @@
 name: Rust
 on:
   push:
-    paths:
-      - 'search-algorithms/linear-search/rust/**'
-      - 'search-algorithms/binary-search/rust/**'
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
 jobs:
   build:
-    if: contains(github.event.head_commit.message, 'rust/')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,4 +15,5 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: test
+          working-directory: search-algorithms/linear-search/rust
           # args: --release --all-features

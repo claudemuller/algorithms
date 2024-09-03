@@ -1,12 +1,11 @@
 name: C
 on:
   push:
-    paths:
-      - 'search-algorithms/linear-search/c/**'
-      - 'search-algorithms/binary-search/c/**'
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
 jobs:
   build:
-    if: contains(github.event.head_commit.message, 'c/')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -15,4 +14,6 @@ jobs:
           sudo apt update
           sudo apt -y install build-essential
       - name: Test
-        run: make test
+        run: |
+          cd search-algorithms/linear-search/c
+          make test
