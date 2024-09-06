@@ -1,4 +1,4 @@
-name: JS
+name: js
 on:
   push:
     branches: ["master"]
@@ -16,13 +16,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Test linear search
-        working-directory: search-algorithms/linear-search/js
-        run: |
-          yarn
-          yarn test
-      - name: Test binary search
+      - name: Install dependencies
         working-directory: search-algorithms/binary-search/js
-        run: |
-          yarn
-          yarn test
+        run: yarn
+      - name: Run tests
+        working-directory: search-algorithms/binary-search/js
+        run: yarn test

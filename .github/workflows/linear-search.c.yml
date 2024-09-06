@@ -1,4 +1,4 @@
-name: C
+name: c
 on:
   push:
     branches: ["master"]
@@ -13,9 +13,6 @@ jobs:
         run: |
           sudo apt update
           sudo apt -y install build-essential
-      - name: Test linear search
+      - name: Run tests
+        run: make test
         working-directory: search-algorithms/linear-search/c
-        run: make test
-      - name: Test binary search
-        working-directory: search-algorithms/binary-search/c
-        run: make test

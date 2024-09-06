@@ -20,5 +20,11 @@ project/plugins/project/
 # JavaScript
 node_modules
 
+# Rust
+target
+
+# C
+build
+
 # OSX
 .DS_STORE

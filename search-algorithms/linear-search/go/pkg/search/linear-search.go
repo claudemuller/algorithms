@@ -1,6 +1,6 @@
 package search
 
-// Linear iterative implementation of the Linear Search algorithm.
+// Linear searches through an array iteratively using the Linear/Simple Search algorithm.
 func Linear(haystack []int, needle int) (int, int) {
 	var c int
 

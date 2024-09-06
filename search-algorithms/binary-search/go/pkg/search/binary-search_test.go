@@ -51,19 +51,22 @@ func TestBinarySearch(t *testing.T) {
 	}
 
 	for _, tc := range tests {
-		haystack, err := genHaystack(tc.lowerN, tc.upperN)
-		if err != nil {
-			t.Fatal(err)
-		}
+		tt := tc
+		t.Run(tt.name, func(t *testing.T) {
+			haystack, err := genHaystack(tt.lowerN, tt.upperN)
+			if err != nil {
+				t.Fatal(err)
+			}
 
-		got, runs := search.Binary(haystack, tc.find)
+			got, runs := search.Binary(haystack, tt.find)
 
-		if tc.foundIdx != got {
-			t.Errorf("want = %d, got = %d", tc.foundIdx, got)
-		}
-		if tc.runs != runs {
-			t.Errorf("want = %d, got = %d", tc.runs, runs)
-		}
+			if tt.foundIdx != got {
+				t.Errorf("want = %d, got = %d", tt.foundIdx, got)
+			}
+			if tt.runs != runs {
+				t.Errorf("want = %d, got = %d", tt.runs, runs)
+			}
+		})
 	}
 }
 
