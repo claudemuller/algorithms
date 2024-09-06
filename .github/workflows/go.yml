@@ -19,3 +19,6 @@ jobs:
       - name: Test binary search
         working-directory: search-algorithms/binary-search/go
         run: go test -v ./...
+      - name: Test selection sort
+        working-directory: sorting-algorithms/selection-sort/go
+        run: go test -v ./...
