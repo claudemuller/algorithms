@@ -1,5 +1,7 @@
 # Selection Sort in Go
 
+[![go](https://github.com/claudemuller/algorithms/actions/workflows/selection-sort.go.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/selection-sort.go.yml)
+
 ## Requirements
 
 - [Go](https://go.dev/)

@@ -1,10 +1,12 @@
 # Software Algorithms ⚙️
 
-A repo containing various algorithms expressed in various languages.
+A repo containing various [algorithms](https://dxt.rs/category/programming/general/algorithms/) expressed in various languages.
 
 ## [Search Algorithms](https://github.com/claudemuller/algorithms/tree/master/search-algorithms)
 
 ### [Linear Search](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/linear-search)
+
+The [companion article](https://dxt.rs/category/programming/general/linear-search/) discussing linear search can be found here.
 
 - [in Go](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/linear-search/go) [![go](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.go.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.go.yml)
 - [in C](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/linear-search/c) [![c](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.c.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.c.yml)
@@ -12,6 +14,8 @@ A repo containing various algorithms expressed in various languages.
 - [in Rust](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/linear-search/rust) [![rust](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.rust.yaml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.rust.yaml)
 
 ### [Binary Search](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search)
+
+The [companion article](https://dxt.rs/category/programming/general/binary-search/) discussing binary search can be found here.
 
 - [in Go](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search/go) [![go](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.go.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.go.yml)
 - [in C](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search/c) [![c](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.c.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.c.yml)
@@ -21,6 +25,8 @@ A repo containing various algorithms expressed in various languages.
 ## [Sorting Algorithms](https://github.com/claudemuller/algorithms/tree/master/sorting-algorithms)
 
 ### [Selection Sort](https://github.com/claudemuller/algorithms/tree/master/sorting-algorithms/selection-sort)
+
+The [companion article](https://dxt.rs/category/programming/general/selection-sort/) discussing selection sort can be found here.
 
 - [in Go](https://github.com/claudemuller/algorithms/tree/master/sorting-algorithms/selection-sort/go)
 
