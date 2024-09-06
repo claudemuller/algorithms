@@ -28,7 +28,7 @@ The [companion article](https://dxt.rs/category/programming/general/binary-searc
 
 The [companion article](https://dxt.rs/category/programming/general/selection-sort/) discussing selection sort can be found here.
 
-- [in Go](https://github.com/claudemuller/algorithms/tree/master/sorting-algorithms/selection-sort/go)
+- [in Go](https://github.com/claudemuller/algorithms/tree/master/sorting-algorithms/selection-sort/go) [![go-selection-sort](https://github.com/claudemuller/algorithms/actions/workflows/selection-sort.go.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/selection-sort.go.yml)
 
 ## [Graph Algorithms](https://github.com/claudemuller/algorithms/tree/master/graph-algorithms)
 
