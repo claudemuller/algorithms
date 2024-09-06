@@ -23,6 +23,12 @@ A repo containing various algorithms expressed in various languages.
 - [in JavaScript](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search/js)
 - [in Rust](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search/rust)
 
+## [Sorting Algorithms](https://github.com/claudemuller/algorithms/tree/master/sorting-algorithms)
+
+### [Selection Sort](https://github.com/claudemuller/algorithms/tree/master/sorting-algorithms/selection-sort)
+
+- [in Go](https://github.com/claudemuller/algorithms/tree/master/sorting-algorithms/selection-sort/go)
+
 ## [Graph Algorithms](https://github.com/claudemuller/algorithms/tree/master/graph-algorithms)
 
 ### [Traversal Algorithms](https://github.com/claudemuller/algorithms/tree/master/graph-algorithms/traversal)
