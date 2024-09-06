@@ -1,7 +1,6 @@
 package sort_test
 
 import (
-	"reflect"
 	"testing"
 
 	"github.com/claudemuller/algorithms/sorting-algorithms/go/pkg/sort"
@@ -21,10 +20,15 @@ func TestSelectionSort(t *testing.T) {
 	}
 
 	for _, tc := range tests {
-		got := sort.Selection(tc.data)
+		got := make([]int, len(tc.data))
+		copy(got, tc.data)
 
-		if reflect.DeepEqual(tc.want, got) {
-			t.Errorf("want = %d, got = %d", tc.want, got)
+		sort.Selection(got)
+
+		for i := range got {
+			if tc.want[i] != got[i] {
+				t.Errorf("want = %d, got = %d", tc.want[i], got[i])
+			}
 		}
 	}
 }
