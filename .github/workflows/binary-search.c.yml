@@ -1,4 +1,4 @@
-name: c
+name: c-binary-search
 on:
   push:
     branches: ["master"]

@@ -8,14 +8,14 @@ A repo containing various algorithms expressed in various languages.
 
 - [in Go](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/linear-search/go) [![go](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.go.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.go.yml)
 - [in C](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/linear-search/c) [![c](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.c.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.c.yml)
-- [in JavaScript](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/linear-search/js) [![js](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.js.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.js.yml)
-- [in Rust](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/linear-search/rust) [![rust](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.rust.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.rust.yml)
+- [in JavaScript](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/linear-search/js) [![js](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.js.yaml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.js.yaml)
+- [in Rust](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/linear-search/rust) [![rust](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.rust.yaml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.rust.yaml)
 
 ### [Binary Search](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search)
 
 - [in Go](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search/go) [![go](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.go.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.go.yml)
 - [in C](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search/c) [![c](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.c.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.c.yml)
-- [in JavaScript](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search/js) [![js](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.js.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.js.yml)
+- [in JavaScript](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search/js) [![js](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.js.yaml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.js.yaml)
 - [in Rust](https://github.com/claudemuller/algorithms/tree/master/search-algorithms/binary-search/rust) [![rust](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.rust.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.rust.yml)
 
 ## [Sorting Algorithms](https://github.com/claudemuller/algorithms/tree/master/sorting-algorithms)

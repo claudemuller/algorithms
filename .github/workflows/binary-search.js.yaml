@@ -1,4 +1,4 @@
-name: js
+name: js-binary-search
 on:
   push:
     branches: ["master"]

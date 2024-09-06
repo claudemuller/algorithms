@@ -1,4 +1,4 @@
-name: js
+name: js-linear-search
 on:
   push:
     branches: ["master"]

@@ -1,6 +1,6 @@
 # Binary Search in Rust
 
-[![rust](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.rust.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.rust.yml)
+[![rust](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.rust.yaml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/binary-search.rust.yaml)
 
 The [companion article](https://dxt.rs/category/programming/general/binary-search) discussing binary search can be found here.
 

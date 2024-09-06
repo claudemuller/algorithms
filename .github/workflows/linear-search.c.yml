@@ -1,4 +1,4 @@
-name: c
+name: c-linear-search
 on:
   push:
     branches: ["master"]

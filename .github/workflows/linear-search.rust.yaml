@@ -1,4 +1,4 @@
-name: rust
+name: rust-linear-search
 on:
   push:
     branches: ["master"]

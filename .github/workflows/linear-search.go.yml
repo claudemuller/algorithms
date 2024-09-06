@@ -1,4 +1,4 @@
-name: go
+name: go-linear-search
 on:
   push:
     branches: ["master"]

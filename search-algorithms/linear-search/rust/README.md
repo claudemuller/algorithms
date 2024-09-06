@@ -1,6 +1,6 @@
 # Linear Search in Rust
 
-[![rust](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.rust.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.rust.yml)
+[![rust](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.rust.yaml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/linear-search.rust.yaml)
 
 The [companion article](https://dxt.rs/category/programming/general/simple-search) discussing linear search can be found here.
 
