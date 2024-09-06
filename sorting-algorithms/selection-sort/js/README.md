@@ -1,5 +1,7 @@
 # Selection Sort in JavaScript
 
+[![js-selection-sort](https://github.com/claudemuller/algorithms/actions/workflows/selection-sort.js.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/selection-sort.js.yml)
+
 ## Requirements
 
 - [node](https://nodejs.org/en)
