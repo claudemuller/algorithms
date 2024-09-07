@@ -1,8 +1,6 @@
 package traversal
 
-import (
-	"slices"
-)
+import "slices"
 
 // DepthFirstTraversal traverses a graph with the depth first algorithm.
 func DepthFirstTraversal(graph map[string][]string, src string) []string {

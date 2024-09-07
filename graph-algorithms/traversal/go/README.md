@@ -1,5 +1,7 @@
 # Graph traversal algorithms in Go
 
+[![go](https://github.com/claudemuller/algorithms/actions/workflows/graph-traversal.go.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/graph-traversal.go.yml)
+
 ## Requirements
 
 - [Go](https://go.dev/)

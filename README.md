@@ -35,7 +35,7 @@ The [companion article](https://dxt.rs/category/programming/general/selection-so
 
 ### [Traversal Algorithms](https://github.com/claudemuller/algorithms/tree/master/graph-algorithms/traversal)
 
-- [in Go](https://github.com/claudemuller/algorithms/tree/master/graph-algorithms/traversal/go)
+- [in Go](https://github.com/claudemuller/algorithms/tree/master/graph-algorithms/traversal/go) [![go](https://github.com/claudemuller/algorithms/actions/workflows/graph-traversal.go.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/graph-traversal.go.yml)
 - [in JavaScript](https://github.com/claudemuller/algorithms/tree/master/graph-algorithms/traversal/js)
 
 ## Navigational Algorithms
