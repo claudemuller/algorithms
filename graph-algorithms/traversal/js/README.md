@@ -1,6 +1,6 @@
 # Graph traversal algorithms in JavaScript
 
-[![js](https://github.com/claudemuller/algorithms/actions/workflows/graph-traversal.js.yaml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/graph-traversal.js.yaml)
+[![js-graph-traversal](https://github.com/claudemuller/algorithms/actions/workflows/graph-traversal.js.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/graph-traversal.js.yml)
 
 ## Requirements
 
