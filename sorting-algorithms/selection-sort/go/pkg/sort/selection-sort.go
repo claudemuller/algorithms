@@ -6,10 +6,10 @@ func Selection(data []int) {
 		var minIdx int
 		min := arr[0]
 
-		for i := 0; i < len(arr); i++ {
+		for i, n := range arr {
 			// We keep track of the lowest value encountered
-			if arr[i] < min {
-				min = arr[i]
+			if n < min {
+				min = n
 				minIdx = i
 			}
 		}
@@ -17,7 +17,7 @@ func Selection(data []int) {
 		return minIdx
 	}
 
-	for j := 0; j < len(data); j++ {
+	for j := range data {
 		// We pass in the unsorted portion of the array i.e. the part after the place we're currently
 		// at, index j
 		lowestIdx := lowest(data[j:]) + j
