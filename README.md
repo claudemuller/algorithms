@@ -31,6 +31,10 @@ The [companion article](https://dxt.rs/category/programming/general/selection-so
 - [in Go](https://github.com/claudemuller/algorithms/tree/master/sorting-algorithms/selection-sort/go) [![go-selection-sort](https://github.com/claudemuller/algorithms/actions/workflows/selection-sort.go.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/selection-sort.go.yml)
 - [in JavaScript](https://github.com/claudemuller/algorithms/tree/master/sorting-algorithms/selection-sort/js) [![js-selection-sort](https://github.com/claudemuller/algorithms/actions/workflows/selection-sort.js.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/selection-sort.js.yml)
 
+### [Quicksort](https://github.com/claudemuller/algorithms/tree/master/sorting-algorithms/quicksort)
+
+- [in Go](https://github.com/claudemuller/algorithms/tree/master/sorting-algorithms/quicksort/go) [![go-quicksort](https://github.com/claudemuller/algorithms/actions/workflows/quicksort.go.yml/badge.svg)](https://github.com/claudemuller/algorithms/actions/workflows/quicksort.go.yml)
+
 ## [Graph Algorithms](https://github.com/claudemuller/algorithms/tree/master/graph-algorithms)
 
 ### [Traversal Algorithms](https://github.com/claudemuller/algorithms/tree/master/graph-algorithms/traversal)
